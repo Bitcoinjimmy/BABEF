@@ -1,12 +1,20 @@
+<div align="center">
+
+# B.A.B.E.F
+
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=28&pause=1000&color=00F5FF&center=true&vCenter=true&width=700&lines=Researcher:+dontaskmehow;Bitcoinj;Transaction+Spoofing;Payment+Hijacking" alt="BABEF banner" />
+
+[![Status](https://img.shields.io/badge/Status-Research-red)](https://github.com/Bitcoinjimmy/BABEF)
+[![Target](https://img.shields.io/badge/Target-bitcoinj-blue)](https://github.com/Bitcoinjimmy/BABEF)
+[![Impact](https://img.shields.io/badge/Impact-Auth_Bypass-orange)](https://github.com/Bitcoinjimmy/BABEF)
+
 # B.A.B.E.F - A BITCOINJ AUTHENTICATION BYPASS EXPLOIT FRAMEWORK
 
 > **Researcher: dontaskmehow**
 
 > CVE-2026-44714 | bitcoinj | Transaction Spoofing | Payment Hijack
 
-[![Status](https://img.shields.io/badge/Status-Research-red)](https://github.com/Bitcoinjimmy/BABEF)
-[![Target](https://img.shields.io/badge/Target-bitcoinj-blue)](https://github.com/Bitcoinjimmy/BABEF)
-[![Impact](https://img.shields.io/badge/Impact-Auth_Bypass-orange)](https://github.com/Bitcoinjimmy/BABEF)
+</div>
 
 `BABEF` is a research-focused exploit framework targeting a critical signature verification flaw in the `bitcoinj` library used by Java-based Bitcoin wallet and payment systems.
 
@@ -14,16 +22,16 @@ This project is built around **CVE-2026-44714**, a vulnerability in bitcoinj’s
 
 ----------------------------------------
 
-## / THREAT OVERVIEW /
+**THREAT OVERVIEW** 
 
-This framework explores the impact of the flaw across:
+**This** framework explores the impact of the flaw across:
 
 - wallet authentication layers
 - transaction verification logic
 - payment channel behavior
 - downstream services relying on bitcoinj validation
 
-### Impact profile
+**Impact profile**
 
 - Attack Vector: Local / Application-level
 - Privilege Requirement: Low
@@ -32,30 +40,33 @@ This framework explores the impact of the flaw across:
 - Integrity: High
 - Availability: High
 
-----------------------------------------
+---
 
-## / ATTACHED COMPONENTS /
+**ATTACHED COMPONENTS** 
 
-### 1. Python Exploit
+**1.** Python Exploit
+
 `bitcoinj_spoof.py`
 
-A Python-based proof-of-concept focused on transaction spoofing behavior and vulnerability validation against vulnerable bitcoinj implementations.
+- A Python-based proof-of-concept focused on transaction spoofing behavior and vulnerability validation against vulnerable bitcoinj implementations.
 
-### 2. JavaScript Payload
+**2.** JavaScript Payload
+
 `bitcoinj_hijack.js`
 
-A JavaScript payload designed to simulate payment channel hijack behavior in affected web-facing wallet or payment environments.
+- A JavaScript payload designed to simulate payment channel hijack behavior in affected web-facing wallet or payment environments.
 
 ### 3. Ruby C2 Server
+
 `bitcoinj_c2.rb`
 
-A Ruby-based command-and-control harness used to model attack orchestration and stolen-funds tracking in a lab environment.
+- A Ruby-based command-and-control harness used to model attack orchestration and stolen-funds tracking in a lab environment.
 
-----------------------------------------
+---
 
-## / INSTALL & RUN /
+**INSTALL & RUN**
 
-### Requirements
+***Requirements***
 
 - Python 3.10+
 - Node.js 18+
